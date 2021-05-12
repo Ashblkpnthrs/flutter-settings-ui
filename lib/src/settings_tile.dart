@@ -82,7 +82,7 @@ class SettingsTile extends StatelessWidget {
 
       case TargetPlatform.android:
       case TargetPlatform.fuchsia:
-        return androidTile(context);
+        return iosTile(context);
 
       default:
         return iosTile(context);
