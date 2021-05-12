@@ -292,7 +292,7 @@ class CupertinoSettingsItemState extends State<CupertinoSettingsItem> {
         decoration: BoxDecoration(
           borderRadius:
               isLargeScreen ? BorderRadius.all(Radius.circular(20)) : null,
-          color: calculateBackgroundColor(context),
+          color: Theme.of(context).colorScheme.primary,
         ),
         height: widget.subtitle == null ? 44.0 : 57.0,
         child: Row(
